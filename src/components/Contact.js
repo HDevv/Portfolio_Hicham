@@ -13,7 +13,7 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
+  const [buttonText, setButtonText] = useState("Envoyer");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -25,7 +25,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Sending...");
+    setButtonText("Envoi...");
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -37,11 +37,11 @@ export const Contact = () => {
     let result = await response.json();
     setFormDetails(formInitialDetails);
     if (result.code == 200) {
-      setStatus({ succes: true, message: "Message sent successfully" });
+      setStatus({ succes: true, message: "Message envoyé !" });
     } else {
       setStatus({
         succes: false,
-        message: "Something went wrong, please try again later.",
+        message: "Il y a un problème, réessayez plus tard.",
       });
     }
   };
@@ -71,14 +71,14 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Get In Touch</h2>
+                  <h2>Me contacter</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="First Name"
+                          placeholder="Nom"
                           onChange={(e) =>
                             onFormUpdate("firstName", e.target.value)
                           }
@@ -88,7 +88,7 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.lasttName}
-                          placeholder="Last Name"
+                          placeholder="Prénom"
                           onChange={(e) =>
                             onFormUpdate("lastName", e.target.value)
                           }
@@ -98,7 +98,7 @@ export const Contact = () => {
                         <input
                           type="email"
                           value={formDetails.email}
-                          placeholder="Email Address"
+                          placeholder="Addresse @ Email"
                           onChange={(e) =>
                             onFormUpdate("email", e.target.value)
                           }
@@ -108,7 +108,7 @@ export const Contact = () => {
                         <input
                           type="tel"
                           value={formDetails.phone}
-                          placeholder="Phone No."
+                          placeholder="Numéro de téléphone"
                           onChange={(e) =>
                             onFormUpdate("phone", e.target.value)
                           }
