@@ -82,7 +82,7 @@ export const Banner = () => {
                     type specimen book.
                   </p>
                   <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                    <ArrowRightCircle size={25} />
                   </button>
                 </div>
               )}
