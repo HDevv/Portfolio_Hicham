@@ -2,7 +2,10 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/kasa.png";
 import projImg2 from "../assets/img/webfit.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg3 from "../assets/img/laby.png";
+import projImg4 from "../assets/img/Gen.png";
+import projImg5 from "../assets/img/recipe.png";
+import projImg6 from "../assets/img/meteo.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -16,29 +19,31 @@ export const Projects = () => {
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "WEBFIT",
+      description:
+        "Site de coaching, présentation des différents programmes, contact par mail et présentation coach",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Labyrinthe",
+      description:
+        "Jeu élaboré avec Javascript pour l'entreprise Alécol, pour petits et grands avec plusieurs niveaux de difficultés",
       imgUrl: projImg3,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg1,
+      imgUrl: projImg4,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg2,
+      imgUrl: projImg5,
     },
     {
       title: "Business Startup",
       description: "Design & Development",
-      imgUrl: projImg3,
+      imgUrl: projImg6,
     },
   ];
 
