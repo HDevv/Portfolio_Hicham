@@ -43,8 +43,9 @@ export const Projects = () => {
       imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "API Météo",
+      description:
+        "Vous donne la météo de n'importe quelle ville dans le monde",
       imgUrl: projImg6,
     },
   ];
