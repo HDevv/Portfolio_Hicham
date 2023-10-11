@@ -31,13 +31,15 @@ export const Projects = () => {
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Générateur de citations (EN)",
+      description:
+        "Petite application React faite à partir d'une API de citations",
       imgUrl: projImg4,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "G la recette (EN)",
+      description:
+        "Application web React également faites à partir d'une API, choisissez un ingrédient et vous aurez une liste de recettes avec celui-ci",
       imgUrl: projImg5,
     },
     {
