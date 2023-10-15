@@ -1,22 +1,11 @@
 /************ Custom Font ************/
-@font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Bold.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Medium.ttf");
-  font-weight: 500;
-}
-@font-face {
-  font-family: Centra;
-  src: url("./assets/font/CentraNo2-Book.ttf");
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Onest&display=swap");
+
+* {
+  font-family: "Onest";
 }
 
-/************ Default Css ************/
-/* Barre de défilement */
+/************ Barre de défilement ************/
 ::-webkit-scrollbar {
   width: 12px; /* Largeur de la barre de défilement */
 }
@@ -295,7 +284,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #b8b8b8;
+  color: #e0e0e0;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;

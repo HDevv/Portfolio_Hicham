@@ -65,21 +65,24 @@ export const Banner = () => {
                 >
                   <span className="tagline">Bienvenue sur mon Portfolio</span>
                   <h1>
-                    {`Bonjour ! Je suis Hicham `}{" "}
+                    {`Bonjour ! Je suis Hicham, `}{" "}
                     <span
                       className="txt-rotate"
                       dataperiod="1000"
-                      data-rotate='[ "Développeur Web Full-Stack"]'
+                      data-rotate='[ "Développeur Web Full-Stack 💻"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    Pourquoi j'aime ce métier ? <br />
+                    👉 Mon enthousiasme pour la CRÉATION et ma capacité à
+                    RÉSOUDRE DES PROBLÈMES complexes. Ils me permettent
+                    d'apporter des idées novatrices et de fournir des résultats
+                    de qualité. <br />
+                    Je suis constamment à l'affût des dernières tendances
+                    technologiques et je m'engage à rester à jour pour offrir
+                    des solutions adaptées aux besoins changeants du marché.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     <ArrowRightCircle size={25} />
