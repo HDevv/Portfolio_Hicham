@@ -76,13 +76,11 @@ export const Banner = () => {
                   </h1>
                   <p>
                     Pourquoi j'aime ce métier ? <br />
+                    <br />
                     👉 Mon enthousiasme pour la CRÉATION et ma capacité à
                     RÉSOUDRE DES PROBLÈMES complexes. Ils me permettent
                     d'apporter des idées novatrices et de fournir des résultats
                     de qualité. <br />
-                    Je suis constamment à l'affût des dernières tendances
-                    technologiques et je m'engage à rester à jour pour offrir
-                    des solutions adaptées aux besoins changeants du marché.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     <ArrowRightCircle size={25} />
