@@ -74,14 +74,14 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/hicham-roldan-152a051b6/">
-                  <img src={navIcon1} alt="" />
+                  <img src={navIcon1} alt="icône de LinkedIn" />
                 </a>
 
                 <a href="https://github.com/HDevv">
-                  <img src={navIcon2} alt="" className="github-icon" />
+                  <img src={navIcon2} alt="icône de github" />
                 </a>
                 <a href="https://twitter.com/ash___dev">
-                  <img src={navIcon3} alt="" />
+                  <img src={navIcon3} alt="logo de twitter" />
                 </a>
               </div>
               <HashLink to="#connect">

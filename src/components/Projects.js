@@ -6,6 +6,7 @@ import projImg3 from "../assets/img/laby.png";
 import projImg4 from "../assets/img/Gen.png";
 import projImg5 from "../assets/img/recipe.png";
 import projImg6 from "../assets/img/meteo.png";
+import projImg7 from "../assets/img/horloge.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -47,6 +48,19 @@ export const Projects = () => {
       description:
         "Vous donne la météo de n'importe quelle ville dans le monde",
       imgUrl: projImg6,
+    },
+  ];
+  const projects2 = [
+    {
+      title: "Horloge",
+      description: "Horloge donnant l'heure actuelle intégrée avec HTML/CC/JS",
+      imgUrl: projImg7,
+    },
+    {
+      title: "KASA",
+      description:
+        "Application web React de location immobilière, API intégrée",
+      imgUrl: projImg1,
     },
   ];
 
@@ -97,8 +111,10 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p></p>
+                      <Tab.Pane eventKey="second">
+                        {projects2.map((project, index) => {
+                          return <ProjectCard key={index} {...project} />;
+                        })}
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
