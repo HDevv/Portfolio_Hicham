@@ -7,6 +7,7 @@ import projImg4 from "../assets/img/Gen.png";
 import projImg5 from "../assets/img/recipe.png";
 import projImg6 from "../assets/img/meteo.png";
 import projImg7 from "../assets/img/horloge.png";
+import projImg8 from "../assets/img/Rain.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -14,37 +15,37 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "KASA",
+      title: "KASA 🏠",
       description:
         "Application web React de location immobilière, API intégrée",
       imgUrl: projImg1,
     },
     {
-      title: "WEBFIT",
+      title: "WEBFIT 🏋️",
       description:
         "Site de coaching, présentation des différents programmes, contact par mail et présentation coach",
       imgUrl: projImg2,
     },
     {
-      title: "Labyrinthe",
+      title: "Labyrinthe 🕹️",
       description:
         "Jeu élaboré avec Javascript pour l'entreprise Alécol, pour petits et grands avec plusieurs niveaux de difficultés",
       imgUrl: projImg3,
     },
     {
-      title: "Générateur de citations (EN)",
+      title: "Générateur de citations (EN) 💬",
       description:
         "Petite application React faite à partir d'une API de citations",
       imgUrl: projImg4,
     },
     {
-      title: "G la recette (EN)",
+      title: "G la recette (EN) 🍽️",
       description:
         "Application web React également faites à partir d'une API, choisissez un ingrédient et vous aurez une liste de recettes avec celui-ci",
       imgUrl: projImg5,
     },
     {
-      title: "API Météo",
+      title: "API Météo ⛅",
       description:
         "Vous donne la météo de n'importe quelle ville dans le monde",
       imgUrl: projImg6,
@@ -52,15 +53,15 @@ export const Projects = () => {
   ];
   const projects2 = [
     {
-      title: "Horloge",
+      title: "Horloge ⌚",
       description: "Horloge donnant l'heure actuelle intégrée avec HTML/CC/JS",
       imgUrl: projImg7,
     },
     {
-      title: "KASA",
+      title: "Rain 🌧️",
       description:
-        "Application web React de location immobilière, API intégrée",
-      imgUrl: projImg1,
+        "Un petit exercice dans lequel on fait tomber la pluie sur une page web en jouant avec du CSS et des méthodes JS",
+      imgUrl: projImg8,
     },
   ];
 
