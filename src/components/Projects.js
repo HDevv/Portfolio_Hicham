@@ -35,7 +35,7 @@ export const Projects = () => {
     {
       title: "Générateur de citations (EN) 💬",
       description:
-        "Petite application React faite à partir d'une API de citations",
+        "Petite application React faite à partir d'une API de génération de citations",
       imgUrl: projImg4,
     },
     {
@@ -46,8 +46,7 @@ export const Projects = () => {
     },
     {
       title: "API Météo ⛅",
-      description:
-        "Vous donne la météo de n'importe quelle ville dans le monde",
+      description: "Vous donne la météo de n'importe quelle ville",
       imgUrl: projImg6,
     },
   ];
