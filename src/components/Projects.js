@@ -9,6 +9,7 @@ import projImg6 from "../assets/img/meteo.png";
 import projImg7 from "../assets/img/horloge.png";
 import projImg8 from "../assets/img/Rain.png";
 import projImg9 from "../assets/img/trattoria.png";
+import projImg10 from "../assets/img/url-shortener.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -65,14 +66,15 @@ export const Projects = () => {
     },
     {
       title: "Trattoria 🍕",
-      description: "Porjet réalisé dans le cadre de mon bachelor ",
+      description:
+        "Porjet réalisé dans le cadre de mon bachelor, maquette donnée par le professeur qu'il a fallu reproduire au PX près, je me suis permis l'ajout de plusieurs animation CSS comme le loader",
       imgUrl: projImg9,
     },
     {
-      title: "Rain 🌧️",
+      title: "URL Shortener ✂️",
       description:
-        "Un petit exercice dans lequel on fait tomber la pluie sur une page web en jouant avec du CSS et des méthodes JS",
-      imgUrl: projImg8,
+        "Projet PHP réalisé dans le cadre d'une évaluation, racourcisseur d'URL fais avec une BDD SQL et PHP",
+      imgUrl: projImg10,
     },
   ];
 
@@ -124,9 +126,11 @@ export const Projects = () => {
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        {projects2.map((project, index) => {
-                          return <ProjectCard key={index} {...project} />;
-                        })}
+                        <Row>
+                          {projects2.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
