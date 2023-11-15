@@ -8,6 +8,7 @@ import projImg5 from "../assets/img/recipe.png";
 import projImg6 from "../assets/img/meteo.png";
 import projImg7 from "../assets/img/horloge.png";
 import projImg8 from "../assets/img/Rain.png";
+import projImg9 from "../assets/img/trattoria.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -55,6 +56,17 @@ export const Projects = () => {
       title: "Horloge ⌚",
       description: "Horloge donnant l'heure actuelle intégrée avec HTML/CC/JS",
       imgUrl: projImg7,
+    },
+    {
+      title: "Rain 🌧️",
+      description:
+        "Un petit exercice dans lequel on fait tomber la pluie sur une page web en jouant avec du CSS et des méthodes JS",
+      imgUrl: projImg8,
+    },
+    {
+      title: "Trattoria 🍕",
+      description: "Porjet réalisé dans le cadre de mon bachelor ",
+      imgUrl: projImg9,
     },
     {
       title: "Rain 🌧️",
