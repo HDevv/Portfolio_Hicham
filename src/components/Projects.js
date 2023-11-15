@@ -54,6 +54,19 @@ export const Projects = () => {
   ];
   const projects2 = [
     {
+      title: "Trattoria 🍕",
+      description:
+        "Porjet réalisé dans le cadre de mon bachelor, maquette donnée par le professeur qu'il a fallu reproduire au PX près, je me suis permis l'ajout de plusieurs animation CSS comme le loader",
+      imgUrl: projImg9,
+    },
+    {
+      title: "URL Shortener ✂️",
+      description:
+        "Projet PHP réalisé dans le cadre d'une évaluation, racourcisseur d'URL fait avec une BDD SQL et PHP",
+      imgUrl: projImg10,
+    },
+
+    {
       title: "Horloge ⌚",
       description: "Horloge donnant l'heure actuelle intégrée avec HTML/CC/JS",
       imgUrl: projImg7,
@@ -63,18 +76,6 @@ export const Projects = () => {
       description:
         "Un petit exercice dans lequel on fait tomber la pluie sur une page web en jouant avec du CSS et des méthodes JS",
       imgUrl: projImg8,
-    },
-    {
-      title: "Trattoria 🍕",
-      description:
-        "Porjet réalisé dans le cadre de mon bachelor, maquette donnée par le professeur qu'il a fallu reproduire au PX près, je me suis permis l'ajout de plusieurs animation CSS comme le loader",
-      imgUrl: projImg9,
-    },
-    {
-      title: "URL Shortener ✂️",
-      description:
-        "Projet PHP réalisé dans le cadre d'une évaluation, racourcisseur d'URL fais avec une BDD SQL et PHP",
-      imgUrl: projImg10,
     },
   ];
 
