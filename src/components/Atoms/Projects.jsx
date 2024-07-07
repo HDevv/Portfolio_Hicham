@@ -1,16 +1,16 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/kasa.png";
-import projImg2 from "../assets/img/webfit.png";
-import projImg3 from "../assets/img/laby.png";
-import projImg4 from "../assets/img/Gen.png";
-import projImg5 from "../assets/img/recipe.png";
-import projImg6 from "../assets/img/meteo.png";
-import projImg7 from "../assets/img/horloge.png";
-import projImg8 from "../assets/img/Rain.png";
-import projImg9 from "../assets/img/trattoria.png";
-import projImg10 from "../assets/img/url-shortener.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import { ProjectCard } from "../Molecules/ProjectCard";
+import projImg1 from "../../assets/img/kasa.png";
+import projImg2 from "../../assets/img/webfit.png";
+import projImg3 from "../../assets/img/laby.png";
+import projImg4 from "../../assets/img/Gen.png";
+import projImg5 from "../../assets/img/recipe.png";
+import projImg6 from "../../assets/img/meteo.png";
+import projImg7 from "../../assets/img/horloge.png";
+import projImg8 from "../../assets/img/Rain.png";
+import projImg9 from "../../assets/img/trattoria.png";
+import projImg10 from "../../assets/img/url-shortener.png";
+import colorSharp2 from "../../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -93,8 +93,8 @@ export const Projects = () => {
                 >
                   <h2>Projets</h2>
                   <p>
-                    Projets réalisés dans le cadre de mes diplômes, lors de mon
-                    stage ou même dans un contexte personnel. Ces différentes
+                    Réalisés dans le cadre de mes diplômes, lors de mon stage ou
+                    même dans un contexte personnel. Ces différentes
                     réalisations m'ont permis de m'améliorer et de me dépasser.
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -149,7 +149,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt=""></img>
     </section>
   );
 };

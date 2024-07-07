@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/illu.png";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import headerImg from "../../assets/img/illu.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
@@ -22,6 +22,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
   const tick = () => {
@@ -82,9 +83,6 @@ export const Banner = () => {
                     d'apporter des idées novatrices et de fournir des résultats
                     de qualité. <br />
                   </p>
-                  <button onClick={() => console.log("connect")}>
-                    <ArrowRightCircle size={25} />
-                  </button>
                 </div>
               )}
             </TrackVisibility>

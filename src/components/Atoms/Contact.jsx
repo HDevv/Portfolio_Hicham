@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.svg";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Contact = () => {
   const formInitialDetails = {
-    firstName: "",
-    lastName: "",
+    nom: "",
+    prenom: "",
     email: "",
     phone: "",
     message: "",
@@ -36,6 +36,7 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
+    // eslint-disable-next-line eqeqeq
     if (result.code == 200) {
       setStatus({ succes: true, message: "Message envoyé !" });
     } else {
@@ -49,21 +50,8 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center">
-          <Col size={12} md={6}>
-            <TrackVisibility>
-              {({ isVisible }) => (
-                <img
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                  src={contactImg}
-                  alt="Contact Us"
-                />
-              )}
-            </TrackVisibility>
-          </Col>
-          <Col size={12} md={6}>
+        <Row>
+          <Col size={12} md={10}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
@@ -77,11 +65,9 @@ export const Contact = () => {
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
-                          value={formDetails.firstName}
+                          value={formDetails.nom}
                           placeholder="Nom"
-                          onChange={(e) =>
-                            onFormUpdate("firstName", e.target.value)
-                          }
+                          onChange={(e) => onFormUpdate("nom", e.target.value)}
                         />
                       </Col>
                       <Col size={12} sm={6} className="px-1">
@@ -90,7 +76,7 @@ export const Contact = () => {
                           value={formDetails.lasttName}
                           placeholder="Prénom"
                           onChange={(e) =>
-                            onFormUpdate("lastName", e.target.value)
+                            onFormUpdate("prenom", e.target.value)
                           }
                         />
                       </Col>
